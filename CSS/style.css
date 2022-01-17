@@ -1,2 +1,232 @@
 @import "./Utils/variabili.css";
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+svg:not(:root) {
+
+    overflow: hidden;
+}
+
+body {
+    word-wrap: break-word;
+    font-feature-settings: "kern", "liga", "clig", "calt";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-kerning: normal;
+    font-weight: 400;
+}
+
+p {
+    margin: 0 0 1.45rem;
+}
+
+.section-padding {
+    padding: 1rem;
+    padding-bottom: 4rem;
+    background-color: var(--main-background-color);
+}
+
+.base-heading {
+    padding: 1rem 2rem;
+    width: 100%;
+    /* padding-bottom: 4rem;
+    margin: 0 0 1.45rem; */
+}
+
+.parag-heading {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.62671rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.1;
+}
+
+.grid-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 2px;
+    margin: 2rem 2rem 0;
+}
+
+#statistic {
+    position: relative;
+    color: #333;
+    height: 20rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    border: 1px solid;
+    padding: 1.5rem;
+    width: 100%;
+    padding: 4rem 0rem;
+    background: rgb(252, 252, 252);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px inset;
+}
+
+.statistic-paragraph {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    color: #333;
+    text-transform: uppercase;
+    font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono", "Liberation Mono", Menlo, Courier, monospace;
+    text-rendering: optimizeLegibility;
+}
+
+#statistic-foot {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 65%;
+}
+
+#statistic-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+#statistic-box {
+    position: relative;
+    cursor: default;
+    width: 728px;
+    height: 177px;
+    /* overflow: hidden; */
+
+}
+
+#statistic-span {
+    position: absolute;
+    bottom: 8%;
+    font-size: min(4.4vw, 4rem);
+    font-weight: 600;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    color: #333;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-overflow: ellipsis;
+}
+
+.recharts-surface {
+    
+    width: 100%;
+}
+
+#statistic-more-info {
+    position: relative;
+    display: inline-flex;
+    user-select: none;
+    cursor: pointer;
+    /* overflow: hidden; */
+}
+
+.fill-icon:hover,
+.fill-icon:active,
+.fill-icon:focus{
+    fill: rgb(28, 28, 225);
+    color: rgb(28, 28, 225);
+}
+
+.more-info-popup {
+    visibility: hidden;
+    text-align: center;
+    width: 200px;
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 10;
+    padding: 1rem 0.5rem;
+    text-transform: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: default;
+    border-radius: 4px;
+    left: 25%;
+    bottom: 125%;
+    transform: translateX(-50%);
+    
+}
+
+
+.more-info-popup:hover {
+    visibility: visible;
+    transition: 1s;
+}
+
+/* .more-info-popup:hover {
+    visibility: visible;
+    transition: 0.01s;
+
+}
+
+.more-info-popup-2 {
+    position: absolute;
+    bottom: -0.5rem;
+    left: calc(50% - 6px);
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+    border-left: 10px solid transparent;
+} */
+
+/* .svg-stay {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+} */
+
+#statistic-date {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono", "Liberation Mono", Menlo, Courier, monospace;
+}
+
+#statistic-button {
+    background-color: rgb(232, 232, 252) none repeat scroll 0%;
+    opacity: 1;
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+    padding: 2px 15px;
+    border-radius: 1px;
+    border: 1px solid;
+    outline: currentcolor none medium;
+    cursor: pointer;
+    text-transform: none;
+    -webkit-appearance: button;
+    overflow: visible;
+}
+
+#statistic-button:active {
+    background: #E8E8FC;
+}
+
