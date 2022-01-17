@@ -27,8 +27,11 @@ p {
     margin: 0 0 1.45rem;
 }
 
+.container {
+    padding: 1rem 2rem;
+}
+
 .section-padding {
-    padding: 1rem;
     padding-bottom: 4rem;
     background-color: var(--main-background-color);
 }
@@ -36,11 +39,11 @@ p {
 .base-heading {
     padding: 1rem 2rem;
     width: 100%;
-    /* padding-bottom: 4rem;
-    margin: 0 0 1.45rem; */
+    margin: 0 0 1.45rem;
 }
 
 .parag-heading {
+    margin-bottom: 2rem;
     font-size: 20px;
     line-height: 140%;
     font-weight: 400;
@@ -49,11 +52,11 @@ p {
 }
 
 h2 {
-    font-weight: 700;
-    font-size: 1.62671rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-rendering: optimizeLegibility;
-    line-height: 1.1;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin: 3rem 0px 2rem;
+    font-weight: 600;
+    scroll-margin-top: 4.75rem;
 }
 
 .grid-boxes {
