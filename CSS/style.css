@@ -14,6 +14,15 @@ body {
     font-weight: 400;
 }
 
+.container {
+    max-width: 1504px;
+    position: relative;
+    margin: 0px auto;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 .section-1 {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px inset;
     margin-top: 0rem;
@@ -25,99 +34,13 @@ body {
     width: 100%;
 }
 
-.cards-flex {
-    display: flex;
-    flex-wrap: wrap;
-    -moz-box-pack: justify;
-    justify-content: space-between;
+.iRRQao {
     width: 100%;
-    margin: 0rem;
+    padding: 4rem 0rem;
+    margin-top: 2rem;
+    background: rgb(252, 252, 252);
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 0px inset;
 }
-
-.a-flex {
-    text-decoration: none;
-    flex: 1 1 372px;
-    color: rgb(51, 51, 51);
-}
-
-.a-flex:hover {
-    transform: scale(1.05);
-    transition: 0.2s;
-    box-shadow: #c9c9c9 0px 0px 15px 2px;
-    background-color: #f2f2f2;
-}
-
-.flex-1 {
-    text-decoration: none;
-    flex: 1 1 372px;
-    color: rgb(51, 51, 51);
-}
-
-.card-body {
-    min-width: 400px;
-    margin: 1rem;
-    border-radius: 2px;
-    border: 1px solid rgb(51, 51, 51);
-    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
-    box-shadow: rgb(210, 210, 249) 4px 4px 0px 0px;
-}
-
-.card-wrap {
-    display: flex;
-    flex-direction: row;
-    -moz-box-pack: center;
-    justify-content: center;
-    align-items: flex-end;
-    background: rgba(0, 0, 0, 0) radial-gradient(46.28% 66.31% at 66.95% 58.35%, rgb(230, 230, 247) 0%, rgb(231, 237, 250) 50%, rgb(233, 251, 250) 100%) repeat scroll 0% 0%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px inset;
-    min-height: 260px;
-}
-
-.card-element {
-    width: 320px;
-    height: 241px;
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 372px;
-    max-height: 257px;
-    position: relative;
-    overflow: hidden;
-}
-
-.card-paragraph {
-    padding: 1.5rem;
-    opacity: 0.8;
-    margin-bottom: 0rem;
-}
-
-.h3 {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    line-height: 1.4;
-    margin: 2.5rem 0px 2rem;
-    font-weight: 600;
-    scroll-margin-top: 4.75rem;
-}
-
-
-h2 {
-    font-size: 2rem;
-    line-height: 1.4;
-    font-weight: 600;
-    margin: 3rem 0px 2rem;
-    scroll-margin-top: 4.75rem;
-}
-
-.section-subtitle {
-    margin-bottom: 1rem;
-    font-size: 20px;
-    line-height: 140%;
-    font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-rendering: optimizeLegibility;
-}
-
 
 .grid-boxes {
     display: grid;
@@ -147,7 +70,7 @@ h2 {
     align-items: flex-start;
     border: 1px solid;
     width: 100%;
-    padding: 4rem 0rem 0rem 1rem;
+    padding: 1.5rem;
     background: rgb(252, 252, 252);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px inset;
 }
@@ -293,4 +216,100 @@ h2 {
 #statistic-button:active {
     background: #E8E8FC;
 }
+
+
+
+.cards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0rem;
+}
+
+.a-flex {
+    text-decoration: none;
+    flex: 1 1 372px;
+    color: rgb(51, 51, 51);
+}
+
+.a-flex:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    box-shadow: #c9c9c9 0px 0px 15px 2px;
+    background-color: #f2f2f2;
+}
+
+.flex-1 {
+    text-decoration: none;
+    flex: 1 1 372px;
+    color: rgb(51, 51, 51);
+}
+
+.card-body {
+    min-width: 400px;
+    margin: 1rem;
+    border-radius: 2px;
+    border: 1px solid rgb(51, 51, 51);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    box-shadow: rgb(210, 210, 249) 4px 4px 0px 0px;
+}
+
+.card-wrap {
+    display: flex;
+    flex-direction: row;
+    -moz-box-pack: center;
+    justify-content: center;
+    align-items: flex-end;
+    background: rgba(0, 0, 0, 0) radial-gradient(46.28% 66.31% at 66.95% 58.35%, rgb(230, 230, 247) 0%, rgb(231, 237, 250) 50%, rgb(233, 251, 250) 100%) repeat scroll 0% 0%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px inset;
+    min-height: 260px;
+}
+
+.card-element {
+    width: 320px;
+    height: 241px;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 372px;
+    max-height: 257px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-paragraph {
+    padding: 1.5rem;
+    opacity: 0.8;
+    margin-bottom: 0rem;
+}
+
+.h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 2.5rem 0px 2rem;
+    font-weight: 600;
+    scroll-margin-top: 4.75rem;
+}
+
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 3rem 0px 2rem;
+    scroll-margin-top: 4.75rem;
+}
+
+.section-subtitle {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
 
