@@ -1,2 +1,26 @@
 @import "./Utils/variabili.css";
 
+.linkfourbox {
+    text-decoration: none;
+}
+.title-h2 {
+    font-family: var(--primary-font-family);
+}
+
+.title-h3 {
+    font-family: var(--primary-font-family);
+    color: var(--main-font-color);
+}
+
+.principal-ethereum-block {
+    padding: 0rem 0rem 4rem;
+}
+
+.description-p {
+    font-family: var(--primary-font-family);
+    color: var(--main-font-color);
+}
+
+.blockfour-head {
+    background: rgba(0, 0, 0, 0) radial-gradient(46.28% 66.31% at 66.95% 58.35%, rgb(230, 230, 247) 0%, rgb(231, 237, 250) 50%, rgb(233, 251, 250) 100%) repeat scroll 0% 0%;
+}
