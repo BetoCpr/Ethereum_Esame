@@ -86,9 +86,8 @@ h2 {
     -ms-flex-align: flex-start;
     align-items: flex-start;
     border: 1px solid;
-    padding: 1.5rem;
     width: 100%;
-    padding: 4rem 0rem;
+    padding: 4rem 0rem 0rem 1rem;
     background: rgb(252, 252, 252);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px inset;
 }
@@ -133,6 +132,7 @@ h2 {
     font-weight: 600;
     margin-top: 0rem;
     margin-bottom: 1rem;
+    margin-left: 1rem;
     color: #333;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -209,6 +209,7 @@ h2 {
 
 #statistic-date {
     position: absolute;
+    padding: 1rem;
     right: 20px;
     bottom: 20px;
     font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono", "Liberation Mono", Menlo, Courier, monospace;
