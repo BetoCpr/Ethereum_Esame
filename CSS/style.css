@@ -1,6 +1,5 @@
 @import "./Utils/variabili.css";
 
-
 * {
     box-sizing: border-box !important;
     margin: 0;
@@ -15,11 +14,7 @@ body {
     font-weight: 400;
 }
 
-section {
-    display: flex;
-}
-
-.ordinam {
+.container {
     max-width: 1504px;
     position: relative;
     margin: 0px auto;
@@ -27,7 +22,6 @@ section {
     display: flex;
     flex-flow: column nowrap;
 }
-
 
 .section-1 {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px inset;
@@ -269,76 +263,9 @@ section {
     justify-content: center;
     align-items: flex-end;
     background: rgba(0, 0, 0, 0) radial-gradient(46.28% 66.31% at 66.95% 58.35%, rgb(230, 230, 247) 0%, rgb(231, 237, 250) 50%, rgb(233, 251, 250) 100%) repeat scroll 0% 0%;
-
-.oriz {
-    display: flex;
-    -moz-box-align: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    margin-top: 1rem;
-    }
-
-.divided {
-    display: flex;
-    flex-wrap: wrap;
-    -moz-box-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0rem;
-}
-
-.get-started {
-    width: 50%;
-    margin: 0px 0px 1.5rem;
-    padding: 6rem;
-}
-
-.title-h2 {
-    font-family: var(--primary-font-family);
-}
-
-.title-h3 {
-    font-family: var(--primary-font-family);
-    color: var(--main-font-color);
-}
-
-.description-p-get {
-    font-family: var(--primary-font-family);
-    color: var(--main-font-color);
-    font-size: 20px;
-}
-
-.description-p {
-    font-family: var(--primary-font-family);
-    color: var(--main-font-color);
-}
-
-.cardface {
-    min-width: 480px;
-    flex-basis: 300px;
-    align-items: flex-end;
-    margin: 1rem;
-    border-radius: 2px;
-    border: 1px solid rgb(51, 51, 51);
-    box-shadow: rgb(210, 210, 249) 4px 4px 0px 0px;
-    flex: 1 1 372px;
-    text-decoration: none;
-}
-
-.titlecard {
-    padding: 1.5rem;
-}
-
-.blockfour-head {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    background: radial-gradient(46.28% 66.31% at 66.95% 58.35%, rgb(230, 230, 247) 0%, rgb(231, 237, 250) 50%, rgb(233, 251, 250) 100%);
     box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px inset;
     min-height: 260px;
 }
-
 
 .card-element {
     width: 320px;
@@ -385,13 +312,84 @@ h2 {
     text-rendering: optimizeLegibility;
 }
 
+/* BETO */
+section {
+    display: flex;
+}
+.ordinam {
+    max-width: 1504px;
+    position: relative;
+    margin: 0px auto;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.oriz {
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    }
+.divided {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0rem;
+}
+.get-started {
+    width: 50%;
+    margin: 0px 0px 1.5rem;
+    padding: 6rem;
+}
+.title-h2 {
+    font-family: var(--primary-font-family);
+}
+.title-h3 {
+    font-family: var(--primary-font-family);
+    color: var(--main-font-color);
+}
+.description-p-get {
+    font-family: var(--primary-font-family);
+    color: var(--main-font-color);
+    font-size: 20px;
+}
+.description-p {
+    font-family: var(--primary-font-family);
+    color: var(--main-font-color);
+}
+.cardface {
+    min-width: 480px;
+    flex-basis: 300px;
+    align-items: flex-end;
+    margin: 1rem;
+    border-radius: 2px;
+    border: 1px solid rgb(51, 51, 51);
+    box-shadow: rgb(210, 210, 249) 4px 4px 0px 0px;
+    flex: 1 1 372px;
+    text-decoration: none;
+}
+.titlecard {
+    padding: 1.5rem;
+}
+.blockfour-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background: radial-gradient(46.28% 66.31% at 66.95% 58.35%, rgb(230, 230, 247) 0%, rgb(231, 237, 250) 50%, rgb(233, 251, 250) 100%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px inset;
+    min-height: 260px;
+}
 .cardface:hover {
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
     background: #F2F2F2;
-    box-shadow: #c9c9c9 0px 0px 15px 2px;
+    box-shadow: #C9C9C9 0px 0px 15px 2px;
     min-height: 260px;
     transform: scale(1.05);
 }
-
+/* BETO */
