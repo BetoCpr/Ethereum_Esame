@@ -23,6 +23,12 @@ body {
     flex-flow: column nowrap;
 }
 
+.container-ermes {
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 0px inset;
+    padding: 0rem 0rem 4rem;
+    margin-top: 0rem;
+}
+
 .section-1 {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px inset;
     margin-top: 0rem;
@@ -50,7 +56,20 @@ body {
 }
 
 #statistic {
+
     position: relative;
+    color: rgb(51, 51, 51);
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid;
+    padding: 1.5rem;
+
+
+    /* position: relative;
     color: #333;
     height: 20rem;
     display: -webkit-box;
@@ -72,7 +91,7 @@ body {
     width: 100%;
     padding: 1.5rem;
     background: rgb(252, 252, 252);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px inset; */
 }
 
 .statistic-paragraph {
@@ -96,14 +115,14 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    display: block;
+    /* display: block; */
 }
 
 #statistic-box {
     position: relative;
     cursor: default;
-    width: 728px;
-    height: 177px;
+    width: 718px;
+    height: 207px;
     /* overflow: hidden; */
 
 }
@@ -115,18 +134,21 @@ body {
     font-weight: 600;
     margin-top: 0rem;
     margin-bottom: 1rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     color: #333;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     text-overflow: ellipsis;
 }
 
-.recharts-surface {
+/* .statistic-span-svg {
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .recharts-surface {
     
     width: 100%;
-}
+} */
 
 #statistic-more-info {
     position: relative;
@@ -184,22 +206,34 @@ body {
     border-left: 10px solid transparent;
 } */
 
-/* .svg-stay {
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-} */
+.svg-stay {
+    position: relative;
+    display: inline-flex;
+    user-select: none;
+    cursor: pointer;
+}
 
 #statistic-date {
     position: absolute;
-    padding: 1rem;
+    /* padding: 1rem; */
     right: 20px;
     bottom: 20px;
     font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono", "Liberation Mono", Menlo, Courier, monospace;
 }
 
 #statistic-button {
-    background-color: rgb(232, 232, 252) none repeat scroll 0%;
+
+    background: rgb(255, 255, 255);
+    font-family: SFMono-Regular, Consolas, "Roboto Mono", "Droid Sans Mono", "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+    padding: 2px 15px;
+    border-radius: 1px;
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+
+    /* background-color: rgb(232, 232, 252) none repeat scroll 0%;
     opacity: 1;
     font-size: 20px;
     color: rgb(51, 51, 51);
@@ -210,14 +244,12 @@ body {
     cursor: pointer;
     text-transform: none;
     -webkit-appearance: button;
-    overflow: visible;
+    overflow: visible; */
 }
 
 #statistic-button:active {
     background: #E8E8FC;
 }
-
-
 
 .cards-flex {
     display: flex;
@@ -236,16 +268,16 @@ body {
 
 .a-flex:hover {
     transform: scale(1.05);
-    transition: 0.2s;
+    transition: 0.1s;
     box-shadow: #c9c9c9 0px 0px 15px 2px;
     background-color: #f2f2f2;
 }
 
-.flex-1 {
+/* .flex-1 {
     text-decoration: none;
     flex: 1 1 372px;
     color: rgb(51, 51, 51);
-}
+} */
 
 .card-body {
     min-width: 400px;
@@ -311,7 +343,89 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-rendering: optimizeLegibility;
 }
+
+    /* MEDIA QUERY */
+
+    @media (max-width: 1024px) {
+    .grid-boxes {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 2rem 0px 0px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .statistic{
+        border-left: 0px solid rgb(0, 0, 0);
+        border-right: 0px solid rgb(0, 0, 0);
+        margin-top: -1px;
+        padding: 2rem 1rem 1rem;
+    }
+    #statistic-box {
+        position: relative;
+        cursor: default;
+        width: 1006px;
+        height: 207px;
+        overflow: hidden;
+    }
+    .recharts-surface {
+        width: 1006px;
+        height: 207px;
+        box-sizing: inherit;
+        overflow: hidden;
+        transform: scale(1.5);
+    }
+
+    .section-padding {
+        padding: 1rem;
+    }
+
+    .cards-flex {
+        /* padding: -1rem; */
+        /* margin: 0px;
+        min-width: 240px; */
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        margin: 0rem;
+    }
+
+    .a-flex {
+        margin: 0px;
+        min-width: min(100%, 449px);
+    }
+
+    .a-flex:hover {
+        transform: scale(1.01);
+        transition: 0.1s;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-family: var(--primary-font-family);
+    }
+
+    .container-ermes {
+        padding: 0rem 0rem 0rem;
+    }
+
+    .card-paragraph {
+        font-size: 13px !important;
+        font-weight: 400;
+        font-family: var(--primary-font-family);
+    }
+
+}
+
+
 /* ermes */
+
 /* BETO */
 section {
     display: flex;
