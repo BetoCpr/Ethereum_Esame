@@ -222,10 +222,18 @@ header{
 
 body {
     word-wrap: break-word;
-    font-feature-settings: "kern", "liga", "clig", "calt";
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; */
     font-kerning: normal;
     font-weight: 400;
+}
+
+.card-paragraph > h3, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-paragraph > h3{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .container {
@@ -235,6 +243,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
+}
+
+.spannino {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container-ermes {
@@ -542,6 +554,7 @@ body {
     margin: 2.5rem 0px 2rem;
     font-weight: 600;
     scroll-margin-top: 4.75rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 
@@ -629,7 +642,7 @@ h2 {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    max-height: 39.6px;
+    max-height: 36px;
 }
 
 .footer-right {
