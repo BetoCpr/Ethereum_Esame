@@ -569,6 +569,11 @@ h2 {
     border-radius: 4px;
 }
 
+.spacing-b-e {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
 .footer-left {
     /* padding-left: 5rem; */
     flex: 1 0 50%;
@@ -1252,3 +1257,87 @@ section {
     opacity: 0.7; 
 }
 /*EUGENIO REISOLI-MATTHIEU FINE*/
+
+/*MANU CSS*/
+
+
+.containerAll{
+    max-width: 1504px;
+    position: relative;
+    margin: 0px auto;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.sfondoGrigio{
+    background: rgba(0, 0, 0, 0) linear-gradient(49.21deg, rgba(127, 127, 213, 0.2) 19.87%, rgba(134, 168, 231, 0.2) 58.46%, rgba(145, 234, 228, 0.2) 97.05%) repeat scroll 0% 0%;;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.styleFontData{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #666666;
+    font-size: 14px;
+}
+
+
+.containermanu{
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    justify-content: space-between;
+}
+
+.effettoTesto{
+    text-decoration: none;
+    color:rgb(102,102,102)
+}
+
+.effettoTesto:hover{
+    color:rgb(28,28,225)
+}
+
+li{
+    list-style: none;
+}
+
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: baseline;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    max-width: 1504px;
+    position: relative;
+    margin: 0px auto;
+    font-size: 14px;
+}
+
+/*.footerLink{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 1rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    
+}*/
+
+.iconColor{
+    fill: #b2b2b2;
+}
+
+
+/*MANU CSS*/
