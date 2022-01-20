@@ -219,10 +219,7 @@ header{
 .wrapper-image-header{
     width: 100%;
     
-    min-height: 380px;
-    max-height: 440px;
-    background: 50px center no-repeat;
-    margin-bottom: 2rem;
+ 
     
 }
 
