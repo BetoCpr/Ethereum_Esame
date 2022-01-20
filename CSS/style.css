@@ -761,6 +761,10 @@ h2 {
 
 /* BETO */
 
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
 
 .ordinam {
     max-width: 1504px;
@@ -842,6 +846,46 @@ h2 {
     min-height: 260px;
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .oriz {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0rem;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    .get-started {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ordinam {
+        padding: 1rem;
+    }
+
+    .description-p {
+        font-size: 13px !important;
+        font-weight: 400;
+        font-family: var(--primary-font-family);
+    }
+
+    .cardface {
+        margin: 0px;
+        min-width: min(100%, 449px);
+    }
+
+    .divided {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        margin: 0rem;
+    }
+}
+
+
 /* BETO */
 
 /*EUGENIO REISOLI-MATTHIEU INIZIO*/
