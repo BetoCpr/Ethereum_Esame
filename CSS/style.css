@@ -1268,9 +1268,10 @@ section {
     min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
+    padding: 1rem 2rem;
 }
 
-.sfondoGrigio{
+/* .sfondoGrigio{
     background: rgba(0, 0, 0, 0) linear-gradient(49.21deg, rgba(127, 127, 213, 0.2) 19.87%, rgba(134, 168, 231, 0.2) 58.46%, rgba(145, 234, 228, 0.2) 97.05%) repeat scroll 0% 0%;;
     padding: 5px;
     margin: 5px;
@@ -1280,7 +1281,7 @@ section {
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-}
+} */
 
 .styleFontData{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1326,18 +1327,35 @@ li{
     font-size: 14px;
 }
 
-/*.footerLink{
+.footerLink{
     display: grid;
     grid-template-columns: repeat(6, auto);
     gap: 1rem;
     -webkit-box-pack: justify;
-    justify-content: space-between;
-    
-}*/
+    justify-content: space-between;    
+}
+
+@media (max-width: 1300px){
+    .footerLink {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media (max-width: 768px){
+    .footerLink {
+    grid-template-columns: repeat(2, auto);
+}
+}
 
 .iconColor{
     fill: #b2b2b2;
 }
 
+.titles-footer {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin: 1.14em 0px;
+    font-weight: bold;
+}
 
 /*MANU CSS*/
