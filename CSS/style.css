@@ -654,7 +654,8 @@ h2 {
 }
 
 .footer-right-img {
-    max-width: 500px;
+    width: 100%;
+    height: auto;
 }
 
     /* MEDIA QUERY */
@@ -750,12 +751,13 @@ h2 {
     
 }
 
-@media (max-width: 630px) {
+/* @media (max-width: 630px) {
     .footer-right-img {
-        max-width: 360px;
-        display: block;
+        max-width: 100%;
+        height: auto;
+        padding: 1rem;
     }
-}
+} */
 
 /* ermes */
 
