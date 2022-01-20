@@ -558,6 +558,82 @@ h2 {
     text-rendering: optimizeLegibility;
 }
 
+.footer-head {
+    margin: 8rem 0px 4rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(
+49.21deg
+, rgba(127, 127, 213, 0.2) 19.87%, rgba(134, 168, 231, 0.2) 58.46%, rgba(145, 234, 228, 0.2) 97.05%);
+    border-radius: 4px;
+}
+
+.footer-left {
+    /* padding-left: 5rem; */
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.footer-text {
+    font-size: 20px;
+    width: 90%;
+    line-height: 140%;
+    margin-bottom: 2rem;
+    color: rgb(102, 102, 102);
+}
+
+.footer-buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.ButtonLink_1 {
+    background-color: rgb(28, 28, 225);
+    border: 1px solid transparent;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25em;
+    text-align: center;
+}
+
+.footer-button-git {
+    text-decoration: none;
+    /* display: inline-block; */
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25em;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    border: 1px solid rgb(51, 51, 51);
+    background-color: transparent;
+    gap: 0.5rem;
+    margin-top: 0rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    max-height: 39.6px;
+}
+
+.footer-right {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.footer-right-img {
+    max-width: 500px;
+}
+
     /* MEDIA QUERY */
 
     @media (max-width: 1024px) {
@@ -635,8 +711,28 @@ h2 {
         font-family: var(--primary-font-family);
     }
 
+    .footer-left  {
+        padding: 0;
+    }
+
+    .footer-right {
+        max-width: 395px;
+    }
+
+    .footer-head {
+        margin-bottom: 4rem;
+        padding: 2rem;
+        flex-direction: column-reverse;
+    }
+    
 }
 
+@media (max-width: 630px) {
+    .footer-right-img {
+        max-width: 360px;
+        display: block;
+    }
+}
 
 /* ermes */
 
