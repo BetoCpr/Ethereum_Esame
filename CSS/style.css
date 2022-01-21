@@ -1,6 +1,6 @@
 @import "./Utils/variabili.css";
 
-
+/*EMANUELE COLUCCINI INIZIO*/
 
 *{
     padding: 0;
@@ -11,15 +11,13 @@
 
 
 
-
 body{
-    
+    position: relative;
     height: 100vh;
 }
 
 .section-one-container-layout{
     max-width: 1504px;
-    position: relative;
     margin: 0px auto;
     min-height: 100vh;
     display: flex;
@@ -36,7 +34,8 @@ body{
     background-color:#ffffff;
     border-bottom: 1.25px solid rgb(0,0,0,0.1);
     position: sticky;
-    top:0px;
+    z-index: 999999;
+    top: 0;
     display: flex;
     flex-direction: row nowrap;
    
@@ -46,12 +45,14 @@ body{
     display: flex;
     width: 100%;
     max-width: 1444px;
-    line-height: 25.6px;
+    
 }
 
-.internal-link-log{
+.internal-link-logo{
     display: flex;
     justify-content: center;
+    align-items: center;
+    
 }
 
 .ethereum-logo{
@@ -75,6 +76,7 @@ body{
 .nav-left-items{
     display: flex;
     align-items: center;
+    color: rgb(51, 51, 51);
     
    
 }
@@ -125,6 +127,9 @@ body{
 
 .form-flex{
     display: flex;
+    position: relative;
+    gap: 1rem;
+    height: 43.6px;
     
 }
 
@@ -151,9 +156,12 @@ body{
     width: 100%;
     border: 1px solid rgb(127, 127, 127);
     border-radius: 0.25rem;
+    line-height:25.6px;
+    vertical-align: baseline;
 }
 .input-search-bar:focus{
-    border: 1px solid #1c1ce1;
+    outline: 0px;
+    border: 2px solid #1c1ce1;
     
 }
 
@@ -161,6 +169,7 @@ body{
     color: rgb(102, 102, 102);
     opacity: 0.54;
     font-size: 16px;
+    
 }
 
 .lentis-position{
@@ -202,9 +211,6 @@ body{
 header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(102, 102, 102);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     width: 100%;
     
 }
@@ -218,13 +224,27 @@ header{
 
 .wrapper-image-header{
     width: 100%;
+    min-height: 440px;
+    max-height: 450px;
+    background: no-repeat scroll 50px center;
+    overflow: hidden;
+    position: relative;
     
- 
     
 }
 
 .image-header{ 
+    bottom: 0;
+    height: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
     width: 100%;
+    right: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
    
     
 }
@@ -234,7 +254,12 @@ header{
 .all-languages{
     text-align: center;
     margin-top: 2rem;
+    
 }
+.different-languages:hover{
+    color: #1c1ce1;
+}
+
 
 
 
@@ -247,6 +272,7 @@ header{
 }
 
 .header-heading-one{
+    text-align: center;
     font-size: 40px;
     color: #333333;
 }
@@ -274,7 +300,69 @@ header{
 }
 
 
+/*Media Query*/
+@media only screen and (min-width: 1170px) {
+    .form-flex {
+        width: 266px;
+    }
+}
+@media only screen and (max-width: 1056px) {
+    .form-flex {
+        width: auto;
+    }
+}
 
+
+
+
+.mobile-nav-container-lent-hamb{
+   display: none;
+   
+
+}
+
+@media  screen and (max-width: 1024px){
+    .inner-content-navbar{
+        display: none;
+    }
+
+    .flex-nav-bar{
+        width: 100%;
+    }
+    .flex-nav-bar-second{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mobile-nav-container-lent-hamb{
+        display: flex;
+        align-items: center;
+       
+    }
+    .mobile-lentis{
+        margin: 0 1rem 0 1rem ;
+    }
+    .mobile-lentis:hover{
+      
+        cursor: pointer;
+    }
+    .mobile-hamburger{
+          margin-left:1rem;
+         
+          cursor: pointer;
+    }
+    .style-hamburger-menu:hover{
+        stroke:#1c1ce1;
+      
+    }
+
+}
+
+
+
+
+
+/* EMANUELE COLUCCINI FINE*/
 
 
 
