@@ -1580,6 +1580,7 @@ li{
 @media (max-width: 1300px){
     .footerLink {
         grid-template-columns: repeat(3, auto);
+        padding-left: 1rem;
     }
 }
 
