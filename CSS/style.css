@@ -252,7 +252,9 @@ header{
     color: #1c1ce1;
 }
 
-
+.githfont {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
 .flex-main-section-1{
