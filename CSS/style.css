@@ -760,6 +760,7 @@ h2 {
 
 .ButtonLink_1 {
     background-color: rgb(28, 28, 225);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px solid transparent;
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
@@ -1121,6 +1122,7 @@ h2 {
 }
 .ButtonLink_1 {
     background-color: rgb(28, 28, 225);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px solid transparent;
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
@@ -1132,6 +1134,7 @@ h2 {
 }
 .ButtonLink_2{
     gap: 0.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 0rem;
     display: flex;
     -webkit-box-align: center;
@@ -1170,11 +1173,14 @@ h2 {
 .section_2_eugenio > div {
     flex: 0 0 50%; 
     max-width: 678px;
+    padding: 6rem;
 }
+
 .section_2_eugenio img {
     width: 100%;
     height: auto;
 }
+
 .sottoDIv_2 {
     font-family: 'Times New Roman', Times, serif;
     color: var(--main-font-color);
@@ -1194,6 +1200,7 @@ h2 {
 }
 .ButtonLink_3 {
     background-color: rgb(28, 28, 225);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px solid transparent;
     color: rgb(255, 255, 255) !important; 
     text-decoration: none;
@@ -1227,6 +1234,7 @@ h2 {
 .section_3_eugenio > div {
     flex: 0 0 50%; 
     max-width: 50%;
+    padding: 6rem;
 
 }
 .section_3_eugenio img {
@@ -1252,6 +1260,7 @@ h2 {
 }
 .ButtonLink_4 {
     background-color: rgb(28, 28, 225);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px solid transparent;
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
@@ -1286,7 +1295,9 @@ h2 {
 .section_4_eugenio > div {
     flex: 0 0 50%; 
     max-width: 50%;
+    padding: 6rem;
 }
+
 .section_4_eugenio img {
     max-width: 100%;
     width: 100%;
@@ -1316,6 +1327,7 @@ h2 {
 }
 .ButtonLink_5 {
     background-color: rgb(28, 28, 225);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px solid transparent;
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
@@ -1327,6 +1339,7 @@ h2 {
 }
 .ButtonLink_6 {
     gap: 0.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 0rem;
     display: flex;
     -webkit-box-align: center;
@@ -1433,16 +1446,29 @@ h2 {
     scroll-margin-top: 4.75rem;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 
     .section_1_eugenio,
     .section_2_eugenio,
     .section_3_eugenio,
     .section_4_eugenio,
     .div_5_eugenio {
+        display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        max-width: 100%;
+        height: 100%;
+        width: 100%;
+        flex: 1 1 50%;
+        padding: 2rem;
     }
-}
+    .section_1_eugenio > div,
+    .section_2_eugenio > div,
+    .section_3_eugenio > div,
+    .section_4_eugenio > div {
+
+    }
+} */
 
 .title-nf {
     margin-bottom: 0.5rem;
@@ -1461,6 +1487,7 @@ h2 {
 }
 .ButtonLink_7 {
     background-color: rgb(28, 28, 225);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px solid transparent;
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
@@ -1489,7 +1516,6 @@ h2 {
     display: flex; 
     margin-right: 2rem; 
 }
-
 
 
 .p1_block {
