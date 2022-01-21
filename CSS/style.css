@@ -1,6 +1,7 @@
 @import "./Utils/variabili.css";
 
 /*EMANUELE COLUCCINI INIZIO*/
+
 *{
     padding: 0;
     margin: 0;
@@ -8,10 +9,17 @@
     
 }
 
+
+
+body{
+    position: relative;
+    height: 100vh;
+}
+
 .section-one-container-layout{
     max-width: 1504px;
-    position: relative;
     margin: 0px auto;
+    min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -21,32 +29,42 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(102, 102, 102);
     list-style: none;
-    padding: 0rem 2rem 1rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     width: 100%;
     background-color:#ffffff;
     border-bottom: 1.25px solid rgb(0,0,0,0.1);
     position: sticky;
+    z-index: 999999;
+    top: 0;
     display: flex;
     flex-direction: row nowrap;
-    z-index: 99999;
-    top:0px;
+   
 }
+
 .flex-nav-bar-second{
     display: flex;
     width: 100%;
     max-width: 1444px;
-    line-height: 25.6px;
+    
 }
-.internal-link-log{
+
+.internal-link-logo{
     display: flex;
     justify-content: center;
+    align-items: center;
+    
 }
+
 .ethereum-logo{
     opacity: 0.8;
 }
+
 .ethereum-logo:hover{
     opacity: 1;
 }
+
+
+
 .inner-content-navbar{
     width: 100%;
     display: flex;
@@ -54,9 +72,11 @@
     align-items: center;
     margin: 0 0 0 2rem;
 }
+
 .nav-left-items{
     display: flex;
     align-items: center;
+    color: rgb(51, 51, 51);
     
    
 }
@@ -64,37 +84,58 @@
     display: flex;
     margin-right: 1.5rem;
 }
+
 .nav-hover-list-items{
     list-style: none;
     cursor: pointer;
 }
+
 .flex-languages, .different-languages, .button-header-explore-ethereum{
     text-decoration: none;
     color: black;
 }
+
+
+
 .svg-nav-bar-arrow-bottom{
     height: 24px;
     width: 24px;
     fill: rgb(178, 178, 178);
 }
+
 .nav-hover-list-items:hover{
     color: var(--hover-font-color);
 }
+
 .nav-hover-list-items:hover .svg-nav-bar-arrow-bottom{
     fill: var(--hover-font-color);
    
 }
+
+
+
+
 .nav-right-items{
     display: flex;
     
+
 }
 .form-container{
  position: relative;
 }
+
+
 .form-flex{
     display: flex;
+    position: relative;
+    gap: 1rem;
+    height: 43.6px;
     
 }
+
+
+
+
 .input-search-slash{
     border: 1px solid rgb(127,127,127);
     border-radius: 0.25rem;
@@ -108,26 +149,36 @@
     
    
 }
+
+
 .input-search-bar{
     padding: .5rem 2rem .5rem 2rem;
     width: 100%;
     border: 1px solid rgb(127, 127, 127);
     border-radius: 0.25rem;
+    line-height:25.6px;
+    vertical-align: baseline;
 }
 .input-search-bar:focus{
-    border: 1px solid #1c1ce1;
+    outline: 0px;
+    border: 2px solid #1c1ce1;
     
 }
+
 .input-search-bar::placeholder{
     color: rgb(102, 102, 102);
     opacity: 0.54;
     font-size: 16px;
+    
 }
+
 .lentis-position{
     align-self: center;
     position: absolute;
     left: 5px;
 }
+
+
 .switch-background{
     display: flex;
     align-items: center;
@@ -137,64 +188,81 @@
 .switch-background:hover{
     fill: var(--hover-font-color);
 }
+
 .flex-languages{
     display: flex;
     align-items: center;
     margin-left: 1rem;
    
 }
+
 .flex-languages:hover{
     color: var(--hover-font-color);
     
 }
+
 .flex-languages:hover .nav-earth-hover{
     fill: var(--hover-font-color);
     transform: scale(1.2);
+
   
 }
+
 header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(102, 102, 102);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     width: 100%;
-    
-}
-#item-languages{
-    padding: 0 0 0 .5rem;
-}
-.wrapper-image-header{
-    width: 100%;
-    min-height: 380px;
-    max-height: 500px;
-    background: rgba(0, 0, 0, 0) none no-repeat scroll 50px center;
-    margin-bottom: 2rem;
-    position: relative;
-    overflow: hidden; 
     
 }
 
-.wrapper-image-header .image-header {
+
+
+#item-languages{
+    padding: 0 0 0 .5rem;
+}
+
+
+.wrapper-image-header{
+    width: 100%;
+    min-height: 440px;
+    max-height: 450px;
+    background: no-repeat scroll 50px center;
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+
+.image-header{ 
     bottom: 0;
     height: 100%;
-    left: 0;
-    margin: 0;
     max-width: none;
+    margin: 0;
     padding: 0;
     position: absolute;
+    width: 100%;
     right: 0;
     top: 0;
     width: 100%;
     object-fit: cover;
+   
+    
 }
-.image-header{ 
-    width: 100%;
-}
+
+
+
 .all-languages{
     text-align: center;
     margin-top: 2rem;
+    
 }
+.different-languages:hover{
+    color: #1c1ce1;
+}
+
+
+
+
 .flex-main-section-1{
     display: flex;
     flex-direction: column;
@@ -202,10 +270,14 @@ header{
     margin: 1rem 0 2rem 0;
     padding: 0 2rem;
 }
+
 .header-heading-one{
+    text-align: center;
     font-size: 40px;
     color: #333333;
 }
+
+
 .text-ethereum-community-header{
     font-size: 20px;
     text-align: center;
@@ -213,16 +285,83 @@ header{
     margin: 1rem 0 1.44rem;
     
 }
+
 .button-header-explore-ethereum{
     border: 1px solid rgb(51, 51, 51);
     padding: 0.5rem 0.75rem;
     border-radius: 0.25em;
 }
+
+
 .button-header-explore-ethereum:hover{
     color: rgb(28, 28, 225);
             border: 1px solid var(--hover-font-color);
             box-shadow: rgb(210, 210, 249) 4px 4px 0px 0px;
 }
+
+
+/*Media Query*/
+@media only screen and (min-width: 1170px) {
+    .form-flex {
+        width: 266px;
+    }
+}
+@media only screen and (max-width: 1056px) {
+    .form-flex {
+        width: auto;
+    }
+}
+
+
+
+
+.mobile-nav-container-lent-hamb{
+   display: none;
+   
+
+}
+
+@media  screen and (max-width: 1024px){
+    .inner-content-navbar{
+        display: none;
+    }
+
+    .flex-nav-bar{
+        width: 100%;
+    }
+    .flex-nav-bar-second{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mobile-nav-container-lent-hamb{
+        display: flex;
+        align-items: center;
+       
+    }
+    .mobile-lentis{
+        margin: 0 1rem 0 1rem ;
+    }
+    .mobile-lentis:hover{
+      
+        cursor: pointer;
+    }
+    .mobile-hamburger{
+          margin-left:1rem;
+         
+          cursor: pointer;
+    }
+    .style-hamburger-menu:hover{
+        stroke:#1c1ce1;
+      
+    }
+
+}
+
+
+
+
+
 /* EMANUELE COLUCCINI FINE*/
 
 /* ermes */
