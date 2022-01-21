@@ -6,20 +6,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
-}
-
-
-
-body{
-    position: relative;
-    height: 100vh;
 }
 
 .section-one-container-layout{
     max-width: 1504px;
     margin: 0px auto;
-    min-height: 100vh;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -1015,7 +1006,7 @@ h2 {
 }
 
 @media (max-width: 1024px) {
-    .ordinam {
+    .section-one-container-layout {
         padding: 1rem;
     }
 
