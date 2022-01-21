@@ -769,6 +769,12 @@ h2 {
     text-align: center;
 }
 
+@media (max-width: 453px) {
+    .buttonLink_1 span {
+        font-size: 12px;
+    }
+}
+
 .footer-button-git {
     text-decoration: none;
     /* display: inline-block; */
