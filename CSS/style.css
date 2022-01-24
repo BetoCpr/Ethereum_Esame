@@ -541,7 +541,6 @@ body {
 }
 
 .more-info-popup {
-    visibility: hidden;
     text-align: center;
     width: 200px;
     color: rgb(51, 51, 51);
@@ -557,29 +556,12 @@ body {
     left: 25%;
     bottom: 125%;
     transform: translateX(-50%);
-    
+    visibility: hidden;
 }
 
-
-.more-info-popup:hover {
+.fill-icon:hover + .more-info-popup {
     visibility: visible;
-    transition: 1s;
 }
-
-/* .more-info-popup:hover {
-    visibility: visible;
-    transition: 0.01s;
-
-}
-
-.more-info-popup-2 {
-    position: absolute;
-    bottom: -0.5rem;
-    left: calc(50% - 6px);
-    border-right: 10px solid transparent;
-    border-top: 10px solid rgb(255, 255, 255);
-    border-left: 10px solid transparent;
-} */
 
 .svg-stay {
     position: relative;
@@ -607,23 +589,18 @@ body {
     border: 1px solid;
     outline: none;
     cursor: pointer;
-
-    /* background-color: rgb(232, 232, 252) none repeat scroll 0%;
-    opacity: 1;
-    font-size: 20px;
-    color: rgb(51, 51, 51);
-    padding: 2px 15px;
-    border-radius: 1px;
-    border: 1px solid;
-    outline: currentcolor none medium;
-    cursor: pointer;
-    text-transform: none;
-    -webkit-appearance: button;
-    overflow: visible; */
 }
 
 #statistic-button:active {
     background: #E8E8FC;
+}
+
+.none {
+    display: none;
+}
+
+#statistic-button:checked + label {
+    width: 300px;
 }
 
 .cards-flex {
