@@ -1017,58 +1017,34 @@ h2 {
 /* BETO */
 
 /*EUGENIO REISOLI-MATTHIEU INIZIO*/
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-/* .container{
-    
-        max-width: 1504px;
-        position: relative;
-        margin: 0px auto;
-        min-height: 100vh;
-        display: flex;
-        flex-flow: column nowrap;
-    
-} */
 
 
 .div_1_eugenio {
     background: rgb(204, 252, 255);
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    flex-direction: row-reverse;
     padding-left: 2rem;
     width: 100%;
     height: 720px;
-    margin-top: -1px;
     border-top: 1px solid rgb(51, 51, 51);
     border-bottom: 1px solid rgb(51, 51, 51);
 }
+
 .section_1_eugenio {
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
-.section-1-img {
+#imagesection {
     display: flex;
-    height: 100%;
-    width: 100%;
+    justify-content: center;
+}
+
+.section-1-img img {
+    height: auto;
+    max-width: 75%;
     position: relative;
     overflow: hidden;
-}
-
-.section_1_eugenio > div {
-    flex: 0 0 50%; 
-    max-width: 50%;
-    padding: 6rem;
-}
-
-.section_1_eugenio img {
-    width: 100%;
-    height: auto;
 }
 
 .sottoDIv_1 {
@@ -1078,6 +1054,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 6rem;
 }
 
 .sottoDiv_1span{
@@ -1128,45 +1105,38 @@ h2 {
     border-radius: 0.25em;
     text-align: center;
 }
+
 .div_2_eugenio {
     background: rgb(255, 227, 211);
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
     height: 720px;
-    margin-top: -1px;
     border-top: 1px solid rgb(51, 51, 51);
     border-bottom: 1px solid rgb(51, 51, 51); 
 }
 .section_2_eugenio {
     display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.section_2_eugenio img {
+    height: auto;
+    max-width: 75%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sottoDIv_2 {
     height: 100%;
     width: 100%;
     margin: 0px;
     display: flex;
-    align-items: center;
-    
-}
-.section_2_eugenio > div {
-    flex: 0 0 50%; 
-    max-width: 678px;
-    padding: 6rem;
-}
-
-.section_2_eugenio img {
-    width: 100%;
-    height: auto;
-}
-
-.sottoDIv_2 {
-    font-family: 'Times New Roman', Times, serif;
-    color: var(--main-font-color);
-    -webkit-box-pack: center;
+    flex-direction: column;
     justify-content: center;
-    flex: 0 0 50%;
-    max-width: 75%;
+    padding: 6rem;
 }
 
 .mini-p_2 {
@@ -1203,31 +1173,23 @@ h2 {
 }
 .section_3_eugenio {
     display: flex;
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    
+    align-items: center !important;
 }
-.section_3_eugenio > div {
-    flex: 0 0 50%; 
-    max-width: 50%;
-    padding: 6rem;
 
-}
 .section_3_eugenio img {
-    max-width: 100%;
-    width: 100%;
+    height: auto;
+    max-width: 75%;
+    position: relative;
+    overflow: hidden;
 }
+
 .sottoDIv_3 {
     font-family: 'Times New Roman', Times, serif;
     color: var(--main-font-color);
     -webkit-box-pack: center;
     justify-content: center;
-    flex: 0 0 50%;
-    max-width: 75%;
     display: flex;
+    flex-direction: column;
 }
 .mini-p_3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1252,7 +1214,6 @@ h2 {
 .div_4_eugenio {
     background: rgb(255, 229, 249);
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
     flex-direction: row-reverse;
     padding-left: 2rem;
@@ -1265,26 +1226,25 @@ h2 {
 }
 .section_4_eugenio {
     display: flex;
-    height: 100%;
-    width: 100%;
-    margin: 0px;
+    flex-direction: row-reverse;
     align-items: center;
-    
 }
-.section_4_eugenio > div {
-    flex: 0 0 50%; 
-    max-width: 50%;
-    padding: 6rem;
+
+.section_4_eugenio #four {
+    display: flex;
+    justify-content: center;
 }
 
 .section_4_eugenio img {
-    max-width: 100%;
-    width: 100%;
+    height: auto;
+    max-width: 75%;
+    position: relative;
+    overflow: hidden;
 }
+
 .sottoDIv_4 {
     font-family: 'Times New Roman', Times, serif;
     color: var(--main-font-color);
-   
     -webkit-box-pack: center;
     justify-content: center;
     flex: 0 0 50%;
@@ -1352,7 +1312,7 @@ h2 {
     width: 100%;
 }
 .div_code_ex_2 {
-    margin-left: 4rem;
+    margin-left: 2rem;
     max-width: 624px;
     border: 1px solid rgb(51, 51, 51);
     box-shadow: rgb(210 210 249) 4px 4px 0px 0px; 
@@ -1425,30 +1385,6 @@ h2 {
     scroll-margin-top: 4.75rem;
 }
 
-/* @media (max-width: 1024px) {
-
-    .section_1_eugenio,
-    .section_2_eugenio,
-    .section_3_eugenio,
-    .section_4_eugenio,
-    .div_5_eugenio {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        max-width: 100%;
-        height: 100%;
-        width: 100%;
-        flex: 1 1 50%;
-        padding: 2rem;
-    }
-    .section_1_eugenio > div,
-    .section_2_eugenio > div,
-    .section_3_eugenio > div,
-    .section_4_eugenio > div {
-
-    }
-} */
-
 .title-nf {
     margin-bottom: 0.5rem;
     font-family: serif;
@@ -1490,6 +1426,7 @@ h2 {
     flex-direction: column;
     word-wrap: break-word;
 }
+
 .block1_code div {
     flex: 1 1 75%;
     display: flex; 
@@ -1514,15 +1451,55 @@ h2 {
     flex-direction: column;
 }
 
-/* @media (max-width: 1520px) {
-    .section-one-container-layout #nopad {
-      
+
+@media (max-width: 1024px) {
+    .div_5_eugenio {
+        flex-direction: column-reverse;
+        height: 100%;
     }
 
-    .section-one-container-layout .no-padding {
-        
+    .div_new_frontier {
+        padding: 2rem;
     }
-} */
+
+    .div_code_ex {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .div_code_ex_2 {
+        margin: 0 auto;
+    }
+    
+    .section_1_eugenio,
+    .section_2_eugenio,
+    .section_3_eugenio,
+    .section_4_eugenio {
+        flex-direction: column;
+        /* padding: 2rem; */
+    }
+
+    .section_3_eugenio,
+    .section_4_eugenio {
+        flex-direction: column-reverse;
+    }
+
+    .section_1_eugenio img ,
+    .section_2_eugenio img ,
+    .section_3_eugenio img ,
+    .section_4_eugenio img {
+        max-width: 40%;
+    }
+
+    .sottoDIv_1,
+    .sottoDIv_2,
+    .sottoDIv_3,
+    .sottoDIv_4 {
+        padding: 2rem;
+        max-width: 100%;
+    }
+}
+    
 
 /*EUGENIO REISOLI-MATTHIEU FINE*/
 
