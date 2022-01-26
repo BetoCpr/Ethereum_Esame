@@ -1620,3 +1620,13 @@ li{
 }
 
 /*MANU CSS*/
+
+/* addon */
+
+.dropdown-hover ul li svg {
+    transition: 0.2s;
+}
+
+.dropdown-hover ul li span:hover ~ svg {
+    transform: rotate(180deg);
+}
