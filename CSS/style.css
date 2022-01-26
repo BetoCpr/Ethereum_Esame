@@ -1705,3 +1705,16 @@ li{
     font-weight: 600;
     scroll-margin-top: 4.75rem;
 }
+
+.ButtonLink_1:hover,
+.ButtonLink_2:hover,
+.ButtonLink_3:hover,
+.ButtonLink_4:hover,
+.ButtonLink_5:hover,
+.ButtonLink_6:hover,
+.ButtonLink_7:hover,
+.footer-button-git:hover {
+    color: rgb(28, 28, 225);
+    border: 1px solid var(--hover-font-color);
+    box-shadow: rgb(210, 210, 249) 4px 4px 0px 0px
+}
