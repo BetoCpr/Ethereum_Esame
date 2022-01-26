@@ -1627,6 +1627,64 @@ li{
     transition: 0.2s;
 }
 
-.dropdown-hover ul li span:hover ~ svg {
+.dropdown-hover ul li span:hover ~ svg,
+.dropdown-hover ul svg:hover  {
     transform: rotate(180deg);
+}
+
+.positiona {
+    z-index:999;
+    position: relative;
+}
+
+.dropdown {
+    list-style-position: outside;
+    visibility: hidden;
+    margin: -1rem 0px 0px;
+    position: absolute;
+    list-style-type: none;
+    list-style-image: none;
+    top: 100%;
+    width: auto;
+    border-radius: 0.5em;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(229, 229, 229);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.dropdown {
+    transition: 0.06s ease-in;
+    transition-delay: 0.08s;
+    margin: 0;
+}
+
+.dropdown li a {
+    white-space: nowrap;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    color: rgb(51, 51, 51);
+    margin: 0;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown li a:hover {
+    background-color: rgba(211, 211, 211, 0.281);
+}
+
+.dropdown a:hover {
+    color: var(--hover-font-color);
+}
+
+.positiona li:hover .dropdown{
+    visibility: visible;
+}
+
+.parent-proof {
+    position: relative;
+    z-index: 1;
 }
