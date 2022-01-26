@@ -501,7 +501,8 @@ body {
 #statistic-span {
     position: absolute;
     bottom: 8%;
-    font-size: min(4.4vw, 4rem);
+    font-size: min(2vw, 3rem);
+    font-size: max(3vw, 40px);
     font-weight: 600;
     margin-top: 0rem;
     margin-bottom: 1rem;
@@ -509,6 +510,7 @@ body {
     color: #333;
     flex-wrap: wrap;
     text-overflow: ellipsis;
+    
 }
 
 .statistic-paragraph-2 {
@@ -683,7 +685,7 @@ body {
 h2 {
     font-size: 2rem;
     line-height: 1.4;
-    font-weight: 600;
+    font-weight: 700 bold;
     margin: 3rem 0px 2rem;
     scroll-margin-top: 4.75rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1227,13 +1229,8 @@ h2 {
 .section_4_eugenio {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
 }
 
-.section_4_eugenio #four {
-    display: flex;
-    justify-content: center;
-}
 
 .section_4_eugenio img {
     height: auto;
@@ -1242,14 +1239,13 @@ h2 {
     overflow: hidden;
 }
 
-.sottoDIv_4 {
-    font-family: 'Times New Roman', Times, serif;
-    color: var(--main-font-color);
-    -webkit-box-pack: center;
-    justify-content: center;
-    flex: 0 0 50%;
-    max-width: 75%;
-    display: flex;
+.sottoDIv_4 h2 {
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin: 3rem 0px 2rem;
+    font-weight: 600;
+    scroll-margin-top: 4.75rem;
 }
 .mini-p_4 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1376,8 +1372,7 @@ h2 {
     justify-content: center;
 }
 .div_new_frontier_2 h2 {
-    margin-bottom: 0.5rem;
-    font-family: serif;
+    font-family: 'Times New Roman', Times, serif !important;
     font-size: 2rem;
     line-height: 1.4;
     margin: 3rem 0px 2rem;
@@ -1453,6 +1448,12 @@ h2 {
 
 
 @media (max-width: 1024px) {
+
+    .div_1_eugenio,
+    .div_4_eugenio {
+        padding: 0;
+    }
+
     .div_5_eugenio {
         flex-direction: column-reverse;
         height: 100%;
@@ -1488,7 +1489,7 @@ h2 {
     .section_2_eugenio img ,
     .section_3_eugenio img ,
     .section_4_eugenio img {
-        max-width: 40%;
+        max-width: 50%;
     }
 
     .sottoDIv_1,
@@ -1687,4 +1688,20 @@ li{
 .parent-proof {
     position: relative;
     z-index: 1;
+}
+
+/* dropdown */
+
+/* h2 section 3 */
+
+.sottoDIv_1 h2,
+.sottoDIv_2 h2,
+.sottoDIv_3 h2,
+.sottoDIv_4 h2 {
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin: 3rem 0px 2rem;
+    font-weight: 600;
+    scroll-margin-top: 4.75rem;
 }
