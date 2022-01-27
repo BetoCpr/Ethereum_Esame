@@ -1496,7 +1496,7 @@ h2 {
     .sottoDIv_2,
     .sottoDIv_3,
     .sottoDIv_4 {
-        padding: 2rem;
+        padding: 0 2rem 0 2rem;
         max-width: 100%;
     }
 }
